@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Tercera práctica</title>
+ <title name="Titulo">Tercera práctica</title>
 </head>
 <body>
-    <form action="form.php" method="post">
-        <fieldset>
-            <legend>Datos del usuario:</legend>
-            <p>Nombre:</p> 
-                <input type="text"><br>
-            <p>Eres socio?</p>
-                <input type="radio" name="socio" value="Si" checked> Si<br>
-                <input type="radio" name="socio" value="No"> No<br>
-            <p>Email:</p>
-                <input type="email>"><br>
-            <p>Contraseña:</p>
-                <input type="password"><br>
+    <form action="form.php" method="post" name="Formulario">
+        <h1 name="Subtitulo1">Formulario de reserva</h1>
+        <p name="Parrafo1">Rellene el siguiente formulario si desea reservar fecha en la sociedad:</p>
+        <fieldset name="Seccion1">
+            <legend name="Descripcion1">Datos del usuario:</legend>
+            <label for="Input1" name="Label1.1">Nombre:</label>
+                <input type="text" name="Input1" id="Input1"><br><br>
+            <label for="Input2" name="Label1.2">Eres socio?</label>
+                <input type="radio" name="Input2" value="Si" id="Input2" checked> Si
+                <input type="radio" name="Input2" value="No" id="Input2"> No<br><br>
+            <label for="Input3" name="Label1.3">Email:</label>
+                <input type="email>" name="Input3" id="Input3"><br><br>
+            <label for="Input4" name="Label1.4">Contraseña:</label>
+                <input type="password" name="Input4" id="Input4"><br><br>
         </fieldset>
+        <fieldset name="Seccion2">
+            <legend name="Descripcion2">Datos de la reserva:</legend>
+            <label for="Input5" name="Label2.1">Edad:</label>
+                <select id="Edad" name="Edad">
+                 <optgroup label="Edad:" name="Label2.1.1">
+                    <option name="Option1">Menor de 18</option>   
+                    <option name="Option2">Entre 18 y 65</option>
+                    <option name="Option3">Mayor de 65</option> 
+                 </optgroup>
+                </select><br><br>
+            <label for="Input6" name="Label2.2">Selecciona la fecha y hora de reserva:</label><br><br>
+                <input type="date" name="Input6"> 
+                <input type="time" name="Input7"><br><br>
+            <label for="Input8" name="Label2.3"> Si desea dejar algun comentario, por favor dejelo a continuacion:</label><br><br>
+                <textarea name="Input8" cols="60" rows="10">Comentarios:</textarea><br><br>
+            <input type="checkbox" name="Input9">
+            <label for="Input9" name="Label2.4">Acepto los terminos y condiciones de esta pagina web</label>
+        </fieldset><br>
+        <input type="submit" name="Input10">
        </form>
 </body>
 </html>
