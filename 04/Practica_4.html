@@ -27,7 +27,7 @@
             </ol>
         </nav><hr>
     </header>
-    <main>
+    <main name="Main">
         <section name="Seccion1">
             <h2 name="Subtitulo1.1" id="enlace1">Sobre mi</h2>
             <ul name="Lista2">
@@ -64,7 +64,7 @@
                         </ol>
                 </li>
             </ul>  
-        </section>
+        </section><hr>
         <section name="Seccion2">
             <h2 name="Subtitulo1.2" id="enlace2">Mis proyectos</h2>
             <p name="Texto6">A continuacion se muestra una tabla donde se pueden encontrar los distintos proyectos realizados hasta la fecha:</p>
@@ -96,13 +96,31 @@
                 </td>
              </tr>
                </table><br>
-        </section>
+        </section><hr>
         <section name="Seccion3">
             <h2 name="Subtitulo1.3" id="enlace3">Sugerencias</h2>
-        </section>
+            <form action="form.php" method="post" name="Formulario">
+                <fieldset name="Fieldset1">
+                    <legend name="Sugerencias">Sugerencias:</legend>
+                    <label for="Input1" name="LabelInput1">Selecciona la fecha en la que realizo la sugerencia:</label><br><br>
+                        <input type="date" name="Input1">
+                    <label for="Input2" name="LabelInput2"> Si desea dejar alguna sugerencia, por favor dejela a continuacion:</label><br><br>
+                        <textarea name="Input2" cols="80" rows="10">Sugerencias:</textarea><br><br>
+                </fieldset><br>
+                <input type="checkbox" name="Input3">
+                <label for="Input3" name="LabelInput3">Acepto los terminos y condiciones de esta pagina web</label><br><br>
+                <input type="submit" name="Input4"><br><br>
+            </form>
+        </section><hr>
     </main>
-    <footer>
-        <h2 name="Subtitulo1.3" id="enlace3">Informacion de contacto</h2>       
+    <footer name="Footer">
+        <h2 name="Subtitulo1.4" id="enlace4">Informacion de contacto</h2>
+        <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" name="Foto2" height="5%" width="5%">   
+        <p name="Texto7">
+            <a href="https://www.instagram.com/?hl=es">@ikers_7</a>
+        </p>
+        <img src="https://image.flaticon.com/icons/png/512/54/54290.png" name="Foto3" height="5%" width="5%">
+        <p name="Texto8">iker.sebastian@opendeusto.es</p>  
     </footer>
    
 </body>
